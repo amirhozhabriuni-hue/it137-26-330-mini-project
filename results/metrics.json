@@ -1,0 +1,159 @@
+{
+    "n_total": 969,
+    "n_train": 775,
+    "n_test": 194,
+    "random_state": 42,
+    "test_size": 0.2,
+    "max_depth": 5,
+    "accuracy": 0.6752577319587629,
+    "macro_f1": 0.6733046430194327,
+    "precision_macro": 0.6960585585585586,
+    "recall_macro": 0.686302835741038,
+    "confusion_matrix": [
+        [
+            73,
+            16
+        ],
+        [
+            47,
+            58
+        ]
+    ],
+    "class_distribution": {
+        "train": [
+            355,
+            420
+        ],
+        "test": [
+            89,
+            105
+        ]
+    },
+    "mean_confidence": 0.7769551426494558,
+    "mean_local_stability": 0.796427155318908,
+    "ece": 0.10169741069069288,
+    "brier_score": 0.2184591125720797,
+    "accuracy_by_confidence": {
+        "low_<0.60": {
+            "count": 0,
+            "accuracy": null
+        },
+        "medium_0.60-0.79": {
+            "count": 137,
+            "accuracy": 0.6058394160583942
+        },
+        "high_>=0.80": {
+            "count": 57,
+            "accuracy": 0.8421052631578947
+        }
+    },
+    "ece_bins": [
+        {
+            "bin": 1,
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 0,
+            "accuracy": null,
+            "confidence": null,
+            "gap": null
+        },
+        {
+            "bin": 2,
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 0,
+            "accuracy": null,
+            "confidence": null,
+            "gap": null
+        },
+        {
+            "bin": 3,
+            "lower": 0.2,
+            "upper": 0.30000000000000004,
+            "count": 0,
+            "accuracy": null,
+            "confidence": null,
+            "gap": null
+        },
+        {
+            "bin": 4,
+            "lower": 0.30000000000000004,
+            "upper": 0.4,
+            "count": 0,
+            "accuracy": null,
+            "confidence": null,
+            "gap": null
+        },
+        {
+            "bin": 5,
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "accuracy": null,
+            "confidence": null,
+            "gap": null
+        },
+        {
+            "bin": 6,
+            "lower": 0.5,
+            "upper": 0.6000000000000001,
+            "count": 0,
+            "accuracy": null,
+            "confidence": null,
+            "gap": null
+        },
+        {
+            "bin": 7,
+            "lower": 0.6000000000000001,
+            "upper": 0.7000000000000001,
+            "count": 120,
+            "accuracy": 0.6166666666666667,
+            "confidence": 0.6899222595809251,
+            "gap": 0.07325559291425843
+        },
+        {
+            "bin": 8,
+            "lower": 0.7000000000000001,
+            "upper": 0.8,
+            "count": 17,
+            "accuracy": 0.5294117647058824,
+            "confidence": 0.7243954465042701,
+            "gap": 0.19498368179838776
+        },
+        {
+            "bin": 9,
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 7,
+            "accuracy": 0.7142857142857143,
+            "confidence": 0.8519978436243918,
+            "gap": 0.1377121293386775
+        },
+        {
+            "bin": 10,
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 50,
+            "accuracy": 0.86,
+            "confidence": 0.9931983805668014,
+            "gap": 0.13319838056680144
+        }
+    ],
+    "counterfactual_selected_cases": 30,
+    "counterfactuals_generated": 30,
+    "counterfactual_validity": 1.0,
+    "average_sparsity": 1.0666666666666667,
+    "average_normalized_magnitude": 0.31288919267866633,
+    "counterfactual_coverage": 1.0,
+    "verification_rules_checked": 30,
+    "verification_unsat": 30,
+    "verification_sat": 0,
+    "generalized_rule_unsat": 0,
+    "generalized_rule_sat": 30,
+    "encoder_mismatch_count": 0,
+    "boundary_cases_checked": 42,
+    "boundary_mismatch_count": 0,
+    "leaf_coverage_verified": true,
+    "leaf_exclusivity_violations": 0,
+    "median_verification_time": 0.00106824999966193
+}
