@@ -70,45 +70,9 @@ This project does not address:
 
 ## 4. End-to-End Pipeline
 
-```text
-Requirements text
-        |
-        v
-Interpretable feature extraction
-        |
-        v
-Stratified 80/20 train-test split
-        |
-        v
-Decision Tree classifier
-        |
-        +----------------------------+
-        |                            |
-        v                            v
-Prediction + probability       Local stability
-        |                            |
-        +-------------+--------------+
-                      |
-                      v
-            Counterfactual search
-                      |
-                      v
-              Counterfactual rule
-                      |
-                      v
-        Exact Decision Tree encoding
-                      |
-                      v
-                     Z3
-                      |
-                      v
-       Verification result + evidence
-                      |
-                      v
-                  Evaluation
-```
+![End-to-End Mini-Project Pipeline](results/figures/pipeline.png)
 
----
+**Figure 1.** End-to-end pipeline for explainable and verifiable requirements classification, including interpretable feature extraction, stratified train-test split, Decision Tree classification, confidence and local-stability analysis, feature-space counterfactual search, SMT encoding with Z3 verification, and quantitative reporting.
 
 ## 5. Dataset
 
@@ -156,8 +120,7 @@ The dataset used in the experiments is stored in:
 data/requirements_dataset.csv
 ```
 
-**Dataset redistribution note:** Before making the repository public, confirm that the dataset can legally be redistributed through GitHub. If redistribution is not permitted, keep the dataset out of the public repository and provide documented download/preparation instructions instead.
-
+**Dataset license and attribution:** The PROMISE_exp dataset source file states that the dataset is distributed under the Creative Commons Attribution-Share Alike 3.0 License (CC BY-SA 3.0). Users redistributing the dataset or derived versions should retain the required attribution and license terms.
 ---
 
 ## 6. Interpretable Feature Representation
@@ -192,12 +155,12 @@ The baseline configuration is:
 | Total samples | 969 |
 | Training samples | 775 |
 | Test samples | 194 |
-| Train/test split | 80/20 |
+| Train/test split | 80/20 stratified |
 | Random seed | 42 |
 | Decision Tree max depth | 5 |
+| Decision Tree class weight | balanced |
 | Decision Tree leaves | 24 |
-
-The split is stratified by the binary class label.
+| ECE bins | 10 |The split is stratified by the binary class label.
 
 ---
 
